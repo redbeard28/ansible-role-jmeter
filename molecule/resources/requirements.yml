@@ -1,0 +1,8 @@
+---
+- src: git+https://github.com/redbeard28/ansible-role-openjdk.git
+  version: master
+  name: openjdk
+
+- src: git+https://github.com/redbeard28/ansible-role-ant.git
+  version: master
+  name: ant

@@ -1,0 +1,26 @@
+---
+# JMeter version
+jmeter_version: '5.1.1'
+jmetter_plugin_manager_version: '1.3'
+jmeter_cmdrunner_version: '2.2'
+
+# JMeter path and folders
+jmeter_tmp_folder: "/tmp"
+jmeter_root_path: "/opt"
+jmeter_report_path: "{{ jmeter_root_path }}/reports"
+jmeter_path: "{{ jmeter_root_path }}/apache-jmeter-{{ jmeter_version }}"
+jmeter_modules_installer_path: "{{ jmeter_path }}/bin"
+jmeter_modules_installer_file: "{{ jmeter_modules_installer_path }}/install_jmeter_modules.sh"
+
+# JMeter modules to install
+jmeter_modules:
+  - {name: "jmeter.backendlistener.elasticsearch", version: "2.6.1", jar: "jmeter.backendlistener.elasticsearch"}
+  - {name: "jpgc-casutg", version: "2.8", jar: "jmeter-plugins-casutg"}
+  - {name: "jpgc-fifo", version: "0.2", jar: "jmeter-plugins-fifo"}
+  - {name: "jpgc-filterresults", version: "2.2", jar: "jmeter-plugins-filterresults"}
+  - {name: "jpgc-graphs-additional", version: "2.0", jar: "jmeter-plugins-graphs-additional"}
+  - {name: "jpgc-graphs-basic", version: "2.0", jar: "jmeter-plugins-graphs-basic"}
+  - {name: "jpgc-graphs-composite", version: "2.0", jar: "jmeter-plugins-graphs-composite"}
+  - {name: "jpgc-graphs-vs", version: "2.0", jar: "jmeter-plugins-graphs-vs"}
+  - {name: "bzm-random-csv", version: "0.6", jar: "jmeter-plugins-random-csv-data-set"}
+  - {name: "jpgc-synthesis", version: "2.2", jar: "jmeter-plugins-synthesis"}

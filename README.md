@@ -65,8 +65,8 @@ Molecule testing framework
 
 You can use molecule to test this role.
 ```bash
-image=debian tag="buster" molecule converge 
-image=debian tag="buster" molecule verify 
+namespace=redbeard28 image=debian tag="buster-basetools" molecule converge 
+namespace=redbeard28 image=debian tag="buster-basetools" molecule verify 
 ```
 
 Author Information
